@@ -1,20 +1,16 @@
 package tacos.utils;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
-import tacos.db.repository.IngredientRepository;
+import tacos.db.jdbc.repository.IngredientRepositoryJdbc;
 import tacos.models.Ingredient;
-import tacos.models.Ingredient.Type;
 
 @Component
 public class IngredientByIdConverter implements Converter<String, Ingredient> {
-    private IngredientRepository ingredientRepo;
+    private IngredientRepositoryJdbc ingredientRepo;
     @Autowired
-    public IngredientByIdConverter(IngredientRepository ingredientRepo) {
+    public IngredientByIdConverter(IngredientRepositoryJdbc ingredientRepo) {
         this.ingredientRepo = ingredientRepo;
     }
     @Override

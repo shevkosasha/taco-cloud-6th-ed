@@ -7,9 +7,8 @@ import org.springframework.jdbc.core.PreparedStatementCreatorFactory;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-import tacos.db.repository.OrderRepository;
+import tacos.db.jdbc.repository.OrderRepositoryJdbc;
 import tacos.models.Ingredient;
-import tacos.models.IngredientRef;
 import tacos.models.Taco;
 import tacos.models.TacoOrder;
 
@@ -19,10 +18,10 @@ import java.util.Date;
 import java.util.List;
 
 @Repository
-public class JdbcOrderRepository implements OrderRepository {
+public class JdbcOrderRepositoryImpl implements OrderRepositoryJdbc {
 
     private JdbcOperations jdbcOperations;
-    public JdbcOrderRepository(JdbcOperations jdbcOperations) {
+    public JdbcOrderRepositoryImpl(JdbcOperations jdbcOperations) {
         this.jdbcOperations = jdbcOperations;
     }
 

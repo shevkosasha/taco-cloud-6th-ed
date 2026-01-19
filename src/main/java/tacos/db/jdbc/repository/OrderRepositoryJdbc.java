@@ -1,8 +1,8 @@
-package tacos.db.repository;
+package tacos.db.jdbc.repository;
 
 import tacos.models.TacoOrder;
 
-public interface OrderRepository {
+public interface OrderRepositoryJdbc {
 
     TacoOrder save(TacoOrder order);
 }

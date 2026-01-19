@@ -1,6 +1,5 @@
 package tacos.controllers;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -14,7 +13,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import lombok.extern.slf4j.Slf4j;
-import tacos.db.repository.IngredientRepository;
+import tacos.db.jdbc.repository.IngredientRepositoryJdbc;
+import tacos.db.springdatajdbc.IngredientRepositorySpringJDBC;
 import tacos.models.Ingredient;
 import tacos.models.Ingredient.Type;
 import tacos.models.Taco;
@@ -27,14 +27,17 @@ import javax.validation.Valid;
 @SessionAttributes("tacoOrder")
 public class DesignTacoController {
 
-    private final IngredientRepository ingredientRepo;
+    private final IngredientRepositoryJdbc ingredientRepositoryJdbc;
+    private final IngredientRepositorySpringJDBC ingredientRepositorySpringJDBC;
     @Autowired
-    public DesignTacoController(IngredientRepository ingredientRepo) {
-        this.ingredientRepo = ingredientRepo;
+    public DesignTacoController(IngredientRepositoryJdbc ingredientRepo, IngredientRepositorySpringJDBC crudIngredientRepository) {
+        this.ingredientRepositoryJdbc = ingredientRepo;
+        this.ingredientRepositorySpringJDBC = crudIngredientRepository;
     }
     @ModelAttribute
     public void addIngredientsToModel(Model model) {
-        List<Ingredient> ingredients = ingredientRepo.findAll();
+        List<Ingredient> ingredients = (List<Ingredient>) ingredientRepositorySpringJDBC.findAll();
+        log.info("Ingredients found:\n" + ingredients);
         Type[] types = Ingredient.Type.values();
         for (Type type : types) {
             model.addAttribute(type.toString().toLowerCase(),
@@ -42,6 +45,7 @@ public class DesignTacoController {
         }
     }
 
+//    without db
 //    @ModelAttribute
 //    public void addIngredientsToModel(Model model) {
 //        List<Ingredient> ingredients = Arrays.asList(
