@@ -8,9 +8,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.support.SessionStatus;
-import tacos.db.jdbc.repository.OrderRepositoryJdbc;
-import tacos.db.springdata.OrderRepositorySpringJDBC;
-import tacos.models.TacoOrder;
+import tacos.db.jdbc.OrderRepositoryJdbc;
+import tacos.db.springdata.jdbc.OrderRepositorySpringJDBC;
+//import tacos.models.cassandra.TacoOrder;
+import tacos.db.springdata.jpa.OrderRepository;
+import tacos.models.h2.TacoOrder;
 
 import javax.validation.Valid;
 
@@ -21,9 +23,12 @@ public class OrderController {
 
     private OrderRepositoryJdbc orderRepositoryJdbc;
     private OrderRepositorySpringJDBC orderRepositorySpringJDBC;
-    public OrderController(OrderRepositoryJdbc orderRepo, OrderRepositorySpringJDBC orderRepositorySpringJDBC) {
+    private OrderRepository orderRepository;
+
+    public OrderController(OrderRepositoryJdbc orderRepo, OrderRepositorySpringJDBC orderRepositorySpringJDBC, OrderRepository orderRepository) {
         this.orderRepositoryJdbc = orderRepo;
         this.orderRepositorySpringJDBC = orderRepositorySpringJDBC;
+        this.orderRepository = orderRepository;
     }
 
     @GetMapping("/current")
@@ -34,7 +39,7 @@ public class OrderController {
         if (!model.containsAttribute("tacoOrder")) {
             TacoOrder tacoOrder = new TacoOrder();
 
-            // Set default values
+//             Set default values
             tacoOrder.setDeliveryName("John Doe");
             tacoOrder.setDeliveryStreet("123 Main St");
             tacoOrder.setDeliveryCity("San Diego");
@@ -56,7 +61,7 @@ public class OrderController {
         }
         log.info("Order submitted: " + order);
 
-        var savedOrder = orderRepositorySpringJDBC.save(order);
+        var savedOrder = orderRepository.save(order);
         log.info("Order saved: " + savedOrder);
 
         sessionStatus.setComplete();

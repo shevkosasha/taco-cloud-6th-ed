@@ -3,9 +3,8 @@ package tacos.utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
-import tacos.db.jdbc.repository.IngredientRepositoryJdbc;
-import tacos.db.springdata.IngredientRepository;
-import tacos.models.Ingredient;
+import tacos.db.springdata.jpa.IngredientRepository;
+import tacos.models.h2.Ingredient;
 
 @Component
 public class IngredientByIdConverter implements Converter<String, Ingredient> {

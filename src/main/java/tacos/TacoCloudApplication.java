@@ -4,11 +4,9 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import tacos.db.springdata.IngredientRepository;
-import tacos.models.Ingredient;
-import tacos.models.Ingredient.Type;
+import tacos.db.springdata.jpa.IngredientRepository;
+import tacos.models.h2.Ingredient;
+import tacos.models.h2.Ingredient.Type;
 
 @SpringBootApplication
 public class TacoCloudApplication {

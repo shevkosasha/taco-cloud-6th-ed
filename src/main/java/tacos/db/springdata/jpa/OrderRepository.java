@@ -1,11 +1,7 @@
-package tacos.db.springdata;
+package tacos.db.springdata.jpa;
 
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-import tacos.models.TacoOrder;
-
-import java.util.Date;
-import java.util.List;
+import tacos.models.h2.TacoOrder;
 
 public interface OrderRepository extends CrudRepository<TacoOrder, Long> {
 
