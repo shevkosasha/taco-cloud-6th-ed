@@ -2,7 +2,13 @@ spring:
   datasource:
     generate-unique-name: false
     name: tacocloud
-#  data:
+  data:
+    mongodb:
+      host: mongodb.tacocloud.com
+      port: 27018
+      username: tacocloud
+      password: s3cr3tp455w0rd
+      database: tacoclouddb
 #    cassandra:
 #      keyspace-name: tacocloud
 #      schema-action: recreate-drop-unused

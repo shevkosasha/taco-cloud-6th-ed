@@ -5,32 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1988f36-ba88-4c32-8bb3-6917938901f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/db/cassandra/IngredientRepositoryCassandra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/db/cassandra/OrderRepositoryCassandra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/models/cassandra/Ingredient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/models/cassandra/IngredientUDT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/models/cassandra/Taco.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/models/cassandra/TacoOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/models/cassandra/TacoUDT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/utils/TacoUDRUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/models/mongodb/Ingredient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/models/mongodb/Taco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/models/mongodb/TacoOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/TacoCloudApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/TacoCloudApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/controllers/DesignTacoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/controllers/DesignTacoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/controllers/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/JdbcIngredientRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/JdbcIngredientRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/JdbcOrderRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/JdbcOrderRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/repository/IngredientRepositoryJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/IngredientRepositoryJdbc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/repository/OrderRepositoryJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/OrderRepositoryJdbc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/IngredientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/jpa/IngredientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/IngredientRepositorySpringJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/jdbc/IngredientRepositorySpringJDBC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/jpa/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/OrderRepositorySpringJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/jdbc/OrderRepositorySpringJDBC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/models/h2/Ingredient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/IngredientRef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/models/h2/IngredientRef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/Taco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/models/h2/Taco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/TacoOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/models/h2/TacoOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/utils/IngredientByIdConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/utils/IngredientByIdConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/cassandra/IngredientRepositoryCassandra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/cassandra/OrderRepositoryCassandra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/cassandra/Ingredient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/cassandra/IngredientUDT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/cassandra/Taco.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/cassandra/TacoOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/cassandra/TacoUDT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/utils/TacoUDRUtils.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,26 +70,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;a8886ea4be446eb989f87dabeea940ad&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/user/IdeaProjects/SpringFrameworkTutotrial/spring-in-action-6th-ed/src/main/java/tacos/models/mongodb",
+    "spring.configuration.checksum": "a8886ea4be446eb989f87dabeea940ad"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;h2&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="tacos.models.cassandra" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\SpringFrameworkTutotrial\spring-in-action-6th-ed\src\main\java\tacos\models\mongodb" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="tacos.models.cassandra" />
@@ -150,6 +142,8 @@
       <list>
         <item itemvalue="JUnit.HomeControllerTest.testHomePage" />
         <item itemvalue="JUnit.HomeControllerTest" />
+        <item itemvalue="JUnit.HomeControllerTest.testHomePage" />
+        <item itemvalue="JUnit.HomeControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1768826031257</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add cassandra (not completed)">
+      <created>1768856298701</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1768856298701</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +183,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add validation for taco" />
     <MESSAGE value="add spring data jdbc" />
-    <option name="LAST_COMMIT_MESSAGE" value="add spring data jdbc" />
+    <MESSAGE value="add cassandra (not completed)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cassandra (not completed)" />
   </component>
 </project>
