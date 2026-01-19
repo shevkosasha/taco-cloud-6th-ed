@@ -5,23 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1988f36-ba88-4c32-8bb3-6917938901f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/JdbcIngredientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/JdbcOrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/db/repository/IngredientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/db/repository/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/models/IngredientRef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tacos/HomeControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/db/springdatajdbc/IngredientRepositorySpringJDBC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/db/springdatajdbc/OrderRepositorySpringJDBC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/configs/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/configs/WebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tacos/controllers/DesignTacoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/controllers/DesignTacoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tacos/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/controllers/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/JdbcIngredientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/JdbcIngredientRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/JdbcOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/JdbcOrderRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/repository/IngredientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/repository/IngredientRepositoryJdbc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/repository/OrderRepositoryJdbc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/models/Ingredient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/Taco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/models/Taco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/TacoOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/models/TacoOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tacos/utils/IngredientByIdConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/utils/IngredientByIdConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/orderForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/orderForm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -72,23 +70,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "spring.configuration.checksum": "a8886ea4be446eb989f87dabeea940ad"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a8886ea4be446eb989f87dabeea940ad&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "h2"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;h2&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Spring Boot.TacoCloudApplication">
     <configuration name="HomeControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-in-action-6th-ed" />

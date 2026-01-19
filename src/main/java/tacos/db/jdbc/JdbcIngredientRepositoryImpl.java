@@ -3,7 +3,7 @@ package tacos.db.jdbc;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
-import tacos.db.repository.IngredientRepository;
+import tacos.db.jdbc.repository.IngredientRepositoryJdbc;
 import tacos.models.Ingredient;
 
 import java.sql.ResultSet;
@@ -12,10 +12,10 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class JdbcIngredientRepository implements IngredientRepository {
+public class JdbcIngredientRepositoryImpl implements IngredientRepositoryJdbc {
     private JdbcTemplate jdbcTemplate;
     @Autowired
-    public JdbcIngredientRepository(JdbcTemplate jdbcTemplate) {
+    public JdbcIngredientRepositoryImpl(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
 
