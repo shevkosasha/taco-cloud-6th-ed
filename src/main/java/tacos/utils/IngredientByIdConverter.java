@@ -4,13 +4,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 import tacos.db.jdbc.repository.IngredientRepositoryJdbc;
+import tacos.db.springdata.IngredientRepository;
 import tacos.models.Ingredient;
 
 @Component
 public class IngredientByIdConverter implements Converter<String, Ingredient> {
-    private IngredientRepositoryJdbc ingredientRepo;
+    private IngredientRepository ingredientRepo;
     @Autowired
-    public IngredientByIdConverter(IngredientRepositoryJdbc ingredientRepo) {
+    public IngredientByIdConverter(IngredientRepository ingredientRepo) {
         this.ingredientRepo = ingredientRepo;
     }
     @Override

@@ -9,11 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.support.SessionStatus;
 import tacos.db.jdbc.repository.OrderRepositoryJdbc;
-import tacos.db.springdatajdbc.OrderRepositorySpringJDBC;
+import tacos.db.springdata.OrderRepositorySpringJDBC;
 import tacos.models.TacoOrder;
 
 import javax.validation.Valid;
-import java.util.Date;
 
 @Slf4j
 @Controller

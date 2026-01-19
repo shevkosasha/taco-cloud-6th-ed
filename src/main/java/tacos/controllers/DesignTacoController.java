@@ -14,7 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import lombok.extern.slf4j.Slf4j;
 import tacos.db.jdbc.repository.IngredientRepositoryJdbc;
-import tacos.db.springdatajdbc.IngredientRepositorySpringJDBC;
+import tacos.db.springdata.IngredientRepository;
+import tacos.db.springdata.IngredientRepositorySpringJDBC;
 import tacos.models.Ingredient;
 import tacos.models.Ingredient.Type;
 import tacos.models.Taco;
@@ -29,14 +30,17 @@ public class DesignTacoController {
 
     private final IngredientRepositoryJdbc ingredientRepositoryJdbc;
     private final IngredientRepositorySpringJDBC ingredientRepositorySpringJDBC;
+    private final IngredientRepository ingredientRepository;
+
     @Autowired
-    public DesignTacoController(IngredientRepositoryJdbc ingredientRepo, IngredientRepositorySpringJDBC crudIngredientRepository) {
+    public DesignTacoController(IngredientRepositoryJdbc ingredientRepo, IngredientRepositorySpringJDBC crudIngredientRepository, IngredientRepository ingredientRepository) {
         this.ingredientRepositoryJdbc = ingredientRepo;
         this.ingredientRepositorySpringJDBC = crudIngredientRepository;
+        this.ingredientRepository = ingredientRepository;
     }
     @ModelAttribute
     public void addIngredientsToModel(Model model) {
-        List<Ingredient> ingredients = (List<Ingredient>) ingredientRepositorySpringJDBC.findAll();
+        List<Ingredient> ingredients = (List<Ingredient>) ingredientRepository.findAll();
         log.info("Ingredients found:\n" + ingredients);
         Type[] types = Ingredient.Type.values();
         for (Type type : types) {
