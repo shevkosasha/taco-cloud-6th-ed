@@ -1,6 +1,6 @@
-package tacos.db.jdbc.repository;
+package tacos.db.jdbc;
 
-import tacos.models.Ingredient;
+import tacos.models.h2.Ingredient;
 
 import java.util.List;
 import java.util.Optional;

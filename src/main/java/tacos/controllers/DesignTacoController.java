@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import lombok.extern.slf4j.Slf4j;
-import tacos.db.jdbc.repository.IngredientRepositoryJdbc;
-import tacos.db.springdata.IngredientRepository;
-import tacos.db.springdata.IngredientRepositorySpringJDBC;
-import tacos.models.Ingredient;
-import tacos.models.Ingredient.Type;
-import tacos.models.Taco;
+import tacos.db.jdbc.IngredientRepositoryJdbc;
+import tacos.db.springdata.jpa.IngredientRepository;
+import tacos.db.springdata.jdbc.IngredientRepositorySpringJDBC;
+import tacos.models.h2.Ingredient;
+import tacos.models.h2.Ingredient.Type;
+import tacos.models.h2.Taco;
 
 import javax.validation.Valid;
 

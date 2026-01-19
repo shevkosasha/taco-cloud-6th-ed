@@ -1,6 +1,6 @@
-package tacos.db.jdbc.repository;
+package tacos.db.jdbc;
 
-import tacos.models.TacoOrder;
+import tacos.models.h2.TacoOrder;
 
 public interface OrderRepositoryJdbc {
 

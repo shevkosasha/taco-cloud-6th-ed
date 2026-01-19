@@ -1,4 +1,4 @@
-package tacos.models;
+package tacos.models.h2;
 
 import java.util.ArrayList;
 import java.util.Date;

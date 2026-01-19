@@ -5,20 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1988f36-ba88-4c32-8bb3-6917938901f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/IngredientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/db/cassandra/IngredientRepositoryCassandra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/db/cassandra/OrderRepositoryCassandra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/models/cassandra/Ingredient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/models/cassandra/IngredientUDT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/models/cassandra/Taco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/models/cassandra/TacoOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/models/cassandra/TacoUDT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/utils/TacoUDRUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tacos/TacoCloudApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/TacoCloudApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tacos/controllers/DesignTacoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/controllers/DesignTacoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tacos/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/controllers/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/springdatajdbc/IngredientRepositorySpringJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/IngredientRepositorySpringJDBC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/springdatajdbc/OrderRepositorySpringJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/OrderRepositorySpringJDBC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/models/Ingredient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/Taco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/models/Taco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/TacoOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/models/TacoOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/JdbcIngredientRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/JdbcIngredientRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/JdbcOrderRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/JdbcOrderRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/repository/IngredientRepositoryJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/IngredientRepositoryJdbc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/repository/OrderRepositoryJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/OrderRepositoryJdbc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/IngredientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/jpa/IngredientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/IngredientRepositorySpringJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/jdbc/IngredientRepositorySpringJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/jpa/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/OrderRepositorySpringJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/jdbc/OrderRepositorySpringJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/models/h2/Ingredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/IngredientRef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/models/h2/IngredientRef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/Taco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/models/h2/Taco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/TacoOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/models/h2/TacoOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tacos/utils/IngredientByIdConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/utils/IngredientByIdConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +59,8 @@
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/tacos/controllers/DesignTacoController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/tacos/controllers/OrderController.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/tacos/models/Taco.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/tacos/models/TacoOrder.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/tacos/models/h2/Taco.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/tacos/models/h2/TacoOrder.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/tacos/utils/IngredientByIdConverter.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/templates/design.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/templates/home.html" root0="FORCE_HIGHLIGHTING" />
@@ -86,6 +99,14 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="tacos.models.cassandra" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tacos.models.cassandra" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.TacoCloudApplication">
     <configuration name="HomeControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-in-action-6th-ed" />
