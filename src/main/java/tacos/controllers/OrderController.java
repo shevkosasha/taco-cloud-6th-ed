@@ -8,9 +8,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.support.SessionStatus;
-import tacos.db.jdbc.OrderRepositoryJdbc;
-import tacos.db.springdata.jdbc.OrderRepositorySpringJDBC;
-//import tacos.models.cassandra.TacoOrder;
 import tacos.db.springdata.jpa.OrderRepository;
 import tacos.models.h2.TacoOrder;
 
@@ -21,21 +18,15 @@ import javax.validation.Valid;
 @RequestMapping("/orders")
 public class OrderController {
 
-    private OrderRepositoryJdbc orderRepositoryJdbc;
-    private OrderRepositorySpringJDBC orderRepositorySpringJDBC;
     private OrderRepository orderRepository;
 
-    public OrderController(OrderRepositoryJdbc orderRepo, OrderRepositorySpringJDBC orderRepositorySpringJDBC, OrderRepository orderRepository) {
-        this.orderRepositoryJdbc = orderRepo;
-        this.orderRepositorySpringJDBC = orderRepositorySpringJDBC;
+    public OrderController(OrderRepository orderRepository) {
         this.orderRepository = orderRepository;
     }
 
     @GetMapping("/current")
     public String orderForm(Model model) {
-//        model.addAttribute("tacoOrder", new TacoOrder());
 
-        // Check if tacoOrder already exists in session
         if (!model.containsAttribute("tacoOrder")) {
             TacoOrder tacoOrder = new TacoOrder();
 
