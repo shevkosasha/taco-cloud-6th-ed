@@ -5,20 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1988f36-ba88-4c32-8bb3-6917938901f4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/configs/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/controllers/RegistrationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/jpa/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/models/registration/RegistrationForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tacos/models/registration/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/controllers/DesignTacoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/controllers/DesignTacoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/controllers/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/IngredientRepositoryJdbc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/JdbcIngredientRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/JdbcOrderRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/jdbc/OrderRepositoryJdbc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/mongodb/IngredientRepositoryMongo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/mongodb/OrderRepositoryMongo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/jdbc/IngredientRepositorySpringJDBC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/db/springdata/jdbc/OrderRepositorySpringJDBC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/mongodb/Ingredient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/mongodb/Taco.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/mongodb/TacoOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/configs/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/configs/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -143,6 +140,7 @@
         <item itemvalue="JUnit.HomeControllerTest" />
         <item itemvalue="JUnit.HomeControllerTest.testHomePage" />
         <item itemvalue="JUnit.HomeControllerTest" />
+        <item itemvalue="JUnit.HomeControllerTest.testHomePage" />
       </list>
     </recent_temporary>
   </component>
@@ -158,6 +156,8 @@
       <option name="presentableId" value="Default" />
       <updated>1768768005124</updated>
       <workItem from="1768800014267" duration="2210000" />
+      <workItem from="1768893087847" duration="1204000" />
+      <workItem from="1768905072374" duration="838000" />
     </task>
     <task id="LOCAL-00001" summary="add spring data jdbc">
       <created>1768826031257</created>
@@ -173,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1768856298701</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="get rid of unnecessary repositories">
+      <created>1768859349024</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1768859349024</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +190,8 @@
     <MESSAGE value="add validation for taco" />
     <MESSAGE value="add spring data jdbc" />
     <MESSAGE value="add cassandra (not completed)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add cassandra (not completed)" />
+    <MESSAGE value="get rid of unnecessary code" />
+    <MESSAGE value="get rid of unnecessary repositories" />
+    <option name="LAST_COMMIT_MESSAGE" value="get rid of unnecessary repositories" />
   </component>
 </project>
