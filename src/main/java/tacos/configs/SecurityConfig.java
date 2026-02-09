@@ -47,21 +47,6 @@ public class SecurityConfig {
 //        };
 //    }
 
-//    @Bean
-//    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-//        return http
-//                .authorizeRequests()
-////                .antMatchers("/design", "/orders").access("hasRole('USER')")  // Specific paths FIRST
-////                .antMatchers("/orders/**").hasRole("USER")  // Restrict other order endpoints
-//                .antMatchers("/design", "/orders/current").permitAll()  // Allow /orders/current
-//                .antMatchers("/", "/**").access("permitAll()")  // General paths LAST
-//                .and().formLogin().loginPage("/login")
-////                .and().oauth2Login().loginPage("/login")
-//                .defaultSuccessUrl("/design")
-//                .and().logout().logoutSuccessUrl("/")
-//                .and()
-//                .build();
-//    }
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
@@ -81,7 +66,11 @@ public class SecurityConfig {
                         .loginPage("/login")
                         .defaultSuccessUrl("/design")
                 )
-                .csrf().disable()
+                .logout(logout -> logout
+                        .logoutSuccessUrl("/")
+                        .permitAll()  // Allow everyone to logout
+                )
+//                .csrf().disable()
                 .build();
     }
 }

@@ -7,10 +7,7 @@
     <list default="true" id="b1988f36-ba88-4c32-8bb3-6917938901f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tacos/configs/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/configs/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/controllers/DesignTacoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/controllers/DesignTacoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tacos/models/registration/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tacos/models/registration/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/design.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/design.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1768859349024</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix security">
+      <created>1770673670022</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1770673670022</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +191,7 @@
     <MESSAGE value="add cassandra (not completed)" />
     <MESSAGE value="get rid of unnecessary code" />
     <MESSAGE value="get rid of unnecessary repositories" />
-    <option name="LAST_COMMIT_MESSAGE" value="get rid of unnecessary repositories" />
+    <MESSAGE value="fix security" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix security" />
   </component>
 </project>
