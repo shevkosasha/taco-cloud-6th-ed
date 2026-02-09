@@ -2,10 +2,7 @@ package tacos.models.registration;
 
 import java.util.Arrays;
 import java.util.Collection;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
@@ -15,6 +12,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 @Entity
 @Data
+@Table(name = "users")
+//@NoArgsConstructor(access=AccessLevel.PRIVATE, force=true)
+@RequiredArgsConstructor
 public class User implements UserDetails {
     private static final long serialVersionUID = 1L;
     @Id
@@ -29,21 +29,21 @@ public class User implements UserDetails {
     private String zip;
     private String phoneNumber;
 
-    public User() {
+//    public User() {
+//
+//    }
 
-    }
-
-    public User(Long id, String username, String password, String fullname, String street, String city, String state, String zip, String phoneNumber) {
-        this.id = id;
-        this.username = username;
-        this.password = password;
-        this.fullname = fullname;
-        this.street = street;
-        this.city = city;
-        this.state = state;
-        this.zip = zip;
-        this.phoneNumber = phoneNumber;
-    }
+//    public User(Long id, String username, String password, String fullname, String street, String city, String state, String zip, String phoneNumber) {
+//        this.id = id;
+//        this.username = username;
+//        this.password = password;
+//        this.fullname = fullname;
+//        this.street = street;
+//        this.city = city;
+//        this.state = state;
+//        this.zip = zip;
+//        this.phoneNumber = phoneNumber;
+//    }
 
     public User(String username, String password, String fullname, String street, String city, String state, String zip, String phone) {
 //        this.id = id;

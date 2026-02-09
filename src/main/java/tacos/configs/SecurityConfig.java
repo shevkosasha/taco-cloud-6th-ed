@@ -47,15 +47,42 @@ public class SecurityConfig {
 //        };
 //    }
 
+//    @Bean
+//    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+//        return http
+//                .authorizeRequests()
+////                .antMatchers("/design", "/orders").access("hasRole('USER')")  // Specific paths FIRST
+////                .antMatchers("/orders/**").hasRole("USER")  // Restrict other order endpoints
+//                .antMatchers("/design", "/orders/current").permitAll()  // Allow /orders/current
+//                .antMatchers("/", "/**").access("permitAll()")  // General paths LAST
+//                .and().formLogin().loginPage("/login")
+////                .and().oauth2Login().loginPage("/login")
+//                .defaultSuccessUrl("/design")
+//                .and().logout().logoutSuccessUrl("/")
+//                .and()
+//                .build();
+//    }
+
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http
-                .authorizeRequests()
-                .antMatchers("/design", "/orders").access("hasRole('USER')")
-                .antMatchers("/", "/**").access("permitAll()")
-                .and().formLogin().loginPage("/login")
-                .defaultSuccessUrl("/design")
-                .and().build();
+                .authorizeHttpRequests(authorize -> authorize
+                        // Public endpoints first
+                        .antMatchers("/", "/login", "/register", "/orders/current").permitAll()
+
+                        // Restricted endpoints
+                        .antMatchers("/design").hasRole("USER")
+                        .antMatchers("/orders/**").hasRole("USER")
+
+                        // Everything else
+                        .anyRequest().permitAll()
+                )
+                .formLogin(form -> form
+                        .loginPage("/login")
+                        .defaultSuccessUrl("/design")
+                )
+                .csrf().disable()
+                .build();
     }
 }
 
